@@ -68,7 +68,7 @@ class ImageBannerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) 
     val bannerImage = itemView.findViewById<ImageView>(R.id.bannerImage)
 
     fun bind(banner: Banner) {
-        bannerImage.loadImage(ubpBanner.imageUrl)
+        bannerImage.loadImage(banner.imageUrl)
     }
 
 }
