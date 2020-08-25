@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+
+        <View
+            android:id="@+id/headerContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_65sdp"
+            android:background="@drawable/rounded_green_ref_id"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".0" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                app:tabBackground="@drawable/banner_selector"
+                app:tabGravity="center"
+                app:tabIndicator="@null"
+                app:tabMode="fixed"
+                app:tabPaddingEnd="@dimen/_7sdp"
+                app:tabPaddingStart="@dimen/_7sdp" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/bannerViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_weight="1"
+                android:outlineProvider="bounds"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <!-- app:layout_constraintTop_toBottomOf="@+id/indicator"
+             app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            -->
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <!--
+
+          android:fitsSystemWindows="true"
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    app:layout_constraintBottom_toTopOf="@+id/bannerViewPager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tabBackground="@drawable/banner_selector"
+                    app:tabGravity="center"
+                    app:tabIndicatorColor="@drawable/banner_selector"
+                    app:tabMode="fixed"
+                    app:tabPaddingEnd="@dimen/_25sdp"
+                    app:tabPaddingStart="@dimen/_25sdp"
+                    app:tabRippleColor="@null" />
+
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/bannerViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/indicator" />-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
