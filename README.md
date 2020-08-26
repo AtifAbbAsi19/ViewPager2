@@ -8,7 +8,7 @@ Banner and Indicator using ViewPager2
 
         val tabLayout = inflated.findViewById<TabLayout>(R.id.tabLayout)
         val pager = inflated.findViewById<ViewPager2>(R.id.pager)
-        pager.adapter = adapter
+        pager.adapter =  PagerAdapter(this)
 
         TabLayoutMediator(tabLayout, pager, TabLayoutMediator.TabConfigurationStrategy { tab, position ->
 
