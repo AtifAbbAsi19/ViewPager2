@@ -34,6 +34,11 @@ Banner and Indicator using ViewPager2
                         android:text="@string/second_tab" />
 
                 </com.google.android.material.tabs.TabLayout>
+                
+                
+            ViewCompat.setBackgroundTintList(
+                    itemViewHolder.logo,
+                    ColorStateList.valueOf(Color.parseColor(YELLOW_COLOR)))
 
 
     private fun updateUiFlow(inflated: View) {
