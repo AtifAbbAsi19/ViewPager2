@@ -36,9 +36,16 @@ Banner and Indicator using ViewPager2
                 </com.google.android.material.tabs.TabLayout>
                 
                 
-            ViewCompat.setBackgroundTintList(
-                    itemViewHolder.logo,
-                    ColorStateList.valueOf(Color.parseColor(YELLOW_COLOR)))
+                ViewCompat.setBackgroundTintList(
+                itemViewHolder.logo,
+                ColorStateList.valueOf(Color.parseColor(YELLOW_COLOR)))
+                    
+                DrawableCompat.setTint(arrowSign.getDrawable(),
+                ContextCompat.getColor(arrowSign.getContext(), R.color.orange));
+
+                DrawableCompat.setTint(inviteButton.getBackground(),
+                ContextCompat.getColor(inviteButton.getContext(), R.color.darkBlack));
+
 
 
     private fun updateUiFlow(inflated: View) {
