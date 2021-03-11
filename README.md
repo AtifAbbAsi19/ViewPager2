@@ -90,4 +90,10 @@ Banner and Indicator using ViewPager2
             }
         })
     }
+    
+    
+    
+    for scroll issue 
+https://stackoverflow.com/questions/62200351/nested-viewpager2
+https://github.com/android/views-widgets-samples/blob/master/ViewPager2/app/src/main/java/androidx/viewpager2/integration/testapp/NestedScrollableHost.kt
 
